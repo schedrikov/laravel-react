@@ -1,0 +1,84 @@
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.tdTable {
+    padding: 10px 8px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.theadTable {
+    background: #f0f0f0;
+}
+
+.theadThTable {
+    padding: 10px 8px;
+}
+
+.trTableSuccess {
+    background: lightblue;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .theadTable {
+        display: none;
+    }
+
+    .trbodyTable {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -10px;
+    }
+
+    .trTable {
+        background: #f0f0f0;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin: 10px;
+        width: calc(1/3*100% - 20px);
+    }
+
+    .trTableSuccess {
+        background: lightblue;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin: 10px;
+        width: calc(1/3*100% - 20px);
+    }
+
+    .tdTable {
+        padding: 10px 30px;
+    }
+
+    .tdTable:last-child {
+        border-bottom: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .trTable {
+        width: calc(1/2*100% - 20px);
+    }
+
+    .trTableSuccess {
+        width: calc(1/2*100% - 20px);
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .trTable {
+        width: calc(100% - 20px);
+    }
+
+    .trTableSuccess {
+        width: calc(100% - 20px);
+    }
+}
